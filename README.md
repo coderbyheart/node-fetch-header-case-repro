@@ -26,6 +26,9 @@ HTTP/2 (like API Gateway), sends a `PATCH` with `If-Match: 1` using `fetch()`,
 and prints the header names exactly as the server received them
 (`req.rawHeaders`).
 
+The [GitHub Actions workflow](.github/workflows/repro.yaml) runs it on
+Node.js 24 and 26; compare the "Run reproduction" step of both jobs.
+
 ## Result
 
 ```
